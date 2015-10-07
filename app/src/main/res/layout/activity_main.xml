@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_launch_picker"
+        android:text="@string/pick_range"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.ticketmaster.mobilestudio.materialrangeslider.ContactCloudEditTextImpl
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.ticketmaster.mobilestudio.materialrangeslider.CanSeeEditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="91dp"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+
+</RelativeLayout>
